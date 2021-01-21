@@ -34,15 +34,20 @@
 
 ## API 사용 가이드
 1.  H2 JDBC URL: jdbc:h2:tcp://localhost/~/test 설정 후 H2 서버 시작
+---
 1. PostMan -> URL  http://localhost:8080/storesave POST 호출 
 <img width="600" alt="스크린샷 2021-01-21 오후 4 16 00" src="https://user-images.githubusercontent.com/68542404/105316417-27114580-5c04-11eb-986a-48a0eb13214a.png">
 <img width="600" alt="스크린샷 2021-01-21 오후 4 19 34" src="https://user-images.githubusercontent.com/68542404/105316610-78213980-5c04-11eb-9c7c-5eb29ab4ca2c.png">
+---
 1. PostMan -> URL  http://localhost:8080/holidayssave PUT 호출 
 <img width="600" alt="스크린샷 2021-01-21 오후 4 20 49" src="https://user-images.githubusercontent.com/68542404/105316759-aacb3200-5c04-11eb-8083-dd8d0bb8482a.png">
+---
 1. PostMan -> URL  http://localhost:8080/list GET 호출 
 <img width="600" alt="스크린샷 2021-01-21 오후 4 23 13" src="https://user-images.githubusercontent.com/68542404/105317006-05fd2480-5c05-11eb-9245-cb90dc72f437.png">
+---
 1. PostMan -> URL  http://localhost:8080/listdetail/1 GET 호출 
 <img width="533" alt="스크린샷 2021-01-21 오후 4 24 34" src="https://user-images.githubusercontent.com/68542404/105317104-2b8a2e00-5c05-11eb-9587-8fb560c48bc4.png">
+---
 1. PostMan -> URL  http://localhost:8080/delete/1 DELERE 호출 
 <img width="600" alt="스크린샷 2021-01-21 오후 4 25 08" src="https://user-images.githubusercontent.com/68542404/105317317-69875200-5c05-11eb-869a-3e06f8b4dc9e.png">
 
