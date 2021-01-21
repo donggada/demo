@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div class="container">
+    <div>
+        <p>
+            <input type="button" onclick="test1()">점포등록</a><br>
+            <a href="/members/new">점포휴일등록</a><br>
+            <a href="/members/new">점포 조회</a><br>
+            <a href="/members/new">점폼 상세 조회</a><br>
+            <a href="/members">점포 삭제</a><br>
+        </p> </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+function test1() {
+
+var data  = {
+"name": "인어수산",
+"owner": "장인어",
+"description": "인천소래포구 종합어시장 갑각류센터 인어수산",
+"level": 2,
+"address": "인천광역시 남동구 논현동 680-1 소래포구 종합어시장 1층 1호",
+"phone": "010-1111-2222",
+"businessTimes": [
+                {
+                    "day": "Tuesday",
+                    "open": "13:00",
+                    "close": "23:00" },
+                {
+                    "day": "Wednesday",
+                    "open": "09:00",
+                    "close": "18:00"   },
+                {
+                    "day": "Thursday",
+                    "open": "09:00",
+                    "close": "23:00"  },
+                {
+                    "day": "Friday",
+                    "open": "09:00",
+                    "close": "23:00"  }
+                ]
+
+}
+
+
+
+             $.ajax({
+			        type		: "GET",
+			        url 		: "/save",
+			        data		:  JSON.stringify(encodeURI(data)),
+			        contentType : "application/json",
+			        success 	: function(data) {
+			        	console.log(data);
+			        },
+			        error		: function(error) {
+			        	console.log(error);
+			        }
+			    });
+}
+</script>
+</body>
+</html>
